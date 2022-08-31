@@ -1,0 +1,16 @@
+{
+  "rates": {
+    "CADUSD": 0.768,
+    "CADEUR": 0.762,
+    "CADGBP": 0.647,
+    "EURUSD": 0.983,
+    "EURCAD": 1.312,
+    "EURGBP": 0.849,
+    "GBPUSD":  1.189,
+    "GBPEUR": 1.178,
+    "GBPCAD": 1.546,
+    "USDCAD": 1.302,
+    "USDEUR": 1.017,
+    "USDGBP": 0.841 
+  }
+}

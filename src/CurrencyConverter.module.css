@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 500px;
+  font-family: 'Georgia', sans-serif;
+  background-color: #fefefe;
+  color: #424C55;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #3AB795;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.table {
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+td {
+  padding: 8px
+}
+
+select, input {
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+.equalsCell {
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.rate {
+  margin-top: 15px;
+}
