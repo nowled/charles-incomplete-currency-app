@@ -31,16 +31,20 @@ function App() {
   };
 
   useEffect(() => {
-    axios
-      .get(
-        'https://api.apilayer.com/fixer/latest?base=USD&apikey=YRbC1AhQTGH24CyznlrIbRrNwYEzN1Z1'
-      )
-      .then((response) => {
-        setRates(response.data.rates);
-      })
-      .catch((error) => {
-        console.log('We got a problem!', error);
-      });
+    const getRate = async () => {
+      const res = await axios
+        .get(
+          'https://api.apilayer.com/fixer/latest?base=USD&apikey=YRbC1AhQTGH24CyznlrIbRrNwYEzN1Z1'
+        )
+        .then((response) => {
+          setRates(response.data.rates);
+        })
+        .catch((error) => {
+          console.log('We got a problem!', error);
+        });
+      return res;
+    };
+    getRate();
   }, []);
 
   return (
